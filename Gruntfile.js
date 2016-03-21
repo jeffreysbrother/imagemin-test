@@ -21,6 +21,18 @@ module.exports = function(grunt) {
           src: ['*.{jpg, jpeg, JPG, JPEG}'],
           dest: 'dist/img/'
         }]
+      },
+      png: {
+        options: {
+          progressive: true,
+          optimizationLevel: 5,
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/img/',
+          src: ['*.{png,PNG}'],
+          dest: 'dist/img/'
+        }]
       }
     },
     uglify: {
