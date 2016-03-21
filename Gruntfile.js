@@ -17,10 +17,15 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'src/',
+          cwd: 'src/img/',
           src: ['*.{jpg, jpeg, JPG, JPEG}'],
-          dest: 'dist/'
+          dest: 'dist/img/'
         }]
+      }
+    },
+    uglify: {
+        files: {
+          'dist/app.min.js': ['src/app.js']
       }
     }
 
@@ -28,6 +33,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['newer:imagemin:jpg']);
+  grunt.registerTask('default', ['newer:imagemin', 'newer:uglify']);
 };
