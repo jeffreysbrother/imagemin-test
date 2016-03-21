@@ -13,4 +13,7 @@ var b3 = 109;
 
 function generateRandom() {
   console.log(Math.random());
+  console.log("XYZ");
+  console.log("apple sauce");
+  console.log("all your base are belong to us");
 }

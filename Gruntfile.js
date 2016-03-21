@@ -55,10 +55,15 @@ module.exports = function(grunt) {
           'dist/index.html': ['src/index.html']
         }
       }
+    },
+    watch: {
+      files: ['src/*'],
+      tasks: ['default'],
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-processhtml');
