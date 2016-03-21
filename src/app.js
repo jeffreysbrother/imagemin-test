@@ -9,7 +9,7 @@ var b = {
 }
 
 var b2 = 129999;
-var b3 = 109;
+var b3 = 109;   
 
 function generateRandom() {
   console.log(Math.random());
