@@ -34,41 +34,12 @@ module.exports = function(grunt) {
           dest: 'dist/img/'
         }]
       }
-    },
-    uglify: {
-      target: {
-        files: {
-          'dist/app.min.js': ['src/app.js']
-        }
-      }
-    },
-    cssmin: {
-      target: {
-        files: {
-          'dist/style.min.css': ['src/normalize.css', 'src/bootstrap.css', 'src/style.css']
-        }
-      }
-    },
-    processhtml: {
-      dist: {
-        files: {
-          'dist/index.html': ['src/index.html']
-        }
-      }
-    },
-    watch: {
-      files: ['src/*'],
-      tasks: ['default'],
     }
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-processhtml');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['newer:imagemin', 'processhtml', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['newer:imagemin']);
 };
