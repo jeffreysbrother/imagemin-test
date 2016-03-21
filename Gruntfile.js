@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'dist/style.min.css': ['src/style.css']
+          'dist/style.min.css': ['src/style.css', 'src/bootstrap.css']
         }
       }
     },
@@ -52,7 +52,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-
 
   grunt.registerTask('default', ['newer:imagemin', 'processhtml', 'uglify', 'cssmin']);
 };
