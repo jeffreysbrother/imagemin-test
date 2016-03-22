@@ -26,6 +26,7 @@ Running "grunt watch" on the **Master** branch will run the following Grunt plug
 * grunt-processhtml
 * grunt-contrib-uglify
 * grunt-contrib-cssmin
+* grunt-uncss
 
 On the branch named **only-images**, running the above command will trigger only grunt-contrib-watch, grunt-newer, and grunt-contrib-imagemin.
 
