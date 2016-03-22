@@ -59,6 +59,13 @@ module.exports = function(grunt) {
     watch: {
       files: ['src/*'],
       tasks: ['default']
+    },
+    uncss: {
+      dist: {
+        files: {
+          'dist/style.min.css': ['dist/index.html']
+        }
+      }
     }
 
   });
@@ -69,6 +76,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-uncss');
 
-  grunt.registerTask('default', ['newer:imagemin', 'processhtml', 'uglify', 'cssmin']);
+
+
+  grunt.registerTask('default', ['newer:imagemin', 'processhtml', 'uglify', 'cssmin', 'uncss']);
 };
