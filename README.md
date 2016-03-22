@@ -38,6 +38,7 @@ After getting everything working on my Windows machine, I cloned the repo and at
 
 ##Future Tools/Features/Ideas to Include/Consider##
 
+* The final CSS code is concatenated and is free of unused rules, but it is not minified (this happened when grunt-uncss was implemented). This needs to be fixed.
 * grunt-uncss: getting this to work with other plugins can be tricky...do more research on the WordPress workaround
 * add preserveComments key to specify desired action with respect to how the uglify task handles comments, research variable mangling.
 * grunt-contrib-sass. Is Compass a better idea? Is it ever beneficial to use Compass with Grunt?
