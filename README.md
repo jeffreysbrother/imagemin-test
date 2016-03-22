@@ -14,7 +14,9 @@
 
 There are currently two main branches to this repo: **Master** and **only-images**. The former contains a few Grunt plugins, while the latter contains only grunt-contrib-imagemin.
 
-##What to Expect##
+##Project Organization and What to Expect##
+
+This example relies on a distinction between those files associated with development (src) and those that will be distributed (dist). The developer makes all necessary changes to the code in the src/ directory, while Grunt generates modified code and places it in dist/. I will say more about these specific modifications later...
 
 Running "grunt watch" on the **Master** branch will run the following Grunt plugins (where applicable):
 
