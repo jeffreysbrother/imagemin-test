@@ -37,3 +37,7 @@ After getting everything working on my Windows machine, I cloned the repo and at
 * add preserveComments key to specify desired action with respect to how the uglify task handles comments, research variable mangling.
 * grunt-contrib-sass. Is Compass a better idea?
 * It would be great to have a terminal emulator that supports multiple tabs
+
+##Points to Consider##
+
+It would be extremely beneficial to experiment with Grunt because it's so popular. Dismissing the tool as a whole would be utterly silly. However, after some fiddling we might find that certain plugins cause certain projects to become too convoluted. The ultimate goal, I think, should be to save time so if a certain plugin fails to do this, or if reliably imparts confusion onto the developers, that plugin should be abandoned. Blah blah blah.
