@@ -27,9 +27,11 @@ Running "grunt watch" on the master branch will run the following Grunt plugins 
 
 On the branch named only-images, running the above command will trigger only grunt-contrib-watch, grunt-newer, and grunt-contrib-imagemin.
 
+This task will generate a "dist" directory containing a processed HTML file that reflects the new CSS and JS (now minified and concatenated), and images that have been minified. Thanks to grunt-newer, this image minification process will only be carried out when the src/ directory contains images not contained in dist/.
+
 ##An Issue with the Mac##
 
-After getting everything working on my Windows machine, I cloned the repo and attempted to run "grunt watch" on my Mac. An error occurred during the imagemin task: `"Warning: Error: spawn ... ENOENT in file ... Use --force to continue."` I tried a great number of potentially dangerous things to solve this issue. In the end, removing the node_modules directory and running "npm install" again ended up fixing everything.
+After getting everything working on my Windows machine, I cloned the repo and attempted to run "grunt watch" on my Mac. An error occurred during the imagemin task: `"Warning: Error: spawn ... ENOENT in file ... Use --force to continue."` I tried a great number of potentially dangerous things to solve this issue. In the end, removing the node_modules directory and running "npm install" again ended up fixing everything. This, by the way, does not appear to break the Grunt tasks if the changes are committed and pushed after switching to operating system b, and then pulling the code updates back to operating system a; the round-trip from Windows-Mac-Windows is working just fine for me.
 
 ##Future Tools or Features to Include##
 
@@ -40,4 +42,4 @@ After getting everything working on my Windows machine, I cloned the repo and at
 
 ##Points to Consider##
 
-It would be extremely beneficial to experiment with Grunt because it's so popular. Dismissing the tool as a whole would be utterly silly. However, after some fiddling we might find that certain plugins cause certain projects to become too convoluted. The ultimate goal, I think, should be to save time so if a certain plugin fails to do this, or if reliably imparts confusion onto the developers, that plugin should be abandoned. Blah blah blah.
+It would be extremely beneficial to experiment with Grunt because it's so popular. In fact, a web developer friend claimed that his agency was unwilling to hire someone lacking experience with build tools (Grunt), Sass, or a grid system. Dismissing the tool as a whole would be utterly silly. However, after some fiddling we might find that certain plugins cause certain projects to become too convoluted. The ultimate goal, I think, should be to save time; if a certain plugin fails to do this, or if reliably imparts confusion onto the process, that plugin should be abandoned. Blah blah blah.
