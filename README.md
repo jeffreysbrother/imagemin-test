@@ -35,11 +35,13 @@ This task will generate a "dist" directory containing a processed HTML file that
 
 After getting everything working on my Windows machine, I cloned the repo and attempted to run "grunt watch" on my Mac. An error occurred during the imagemin task: `"Warning: Error: spawn ... ENOENT in file ... Use --force to continue."` I tried a great number of potentially dangerous things to solve this issue. In the end, removing the node_modules directory and running "npm install" again ended up fixing everything. This, by the way, does not appear to break the Grunt tasks if the changes are committed and pushed after switching to operating system b, and then pulling the code updates back to operating system a; the round-trip from Windows-Mac-Windows is working just fine for me.
 
-##Future Tools or Features to Include##
+##Future Tools/Features/Ideas to Include/Consider##
 
 * grunt-uncss: getting this to work with other plugins can be tricky...do more research on the WordPress workaround
 * add preserveComments key to specify desired action with respect to how the uglify task handles comments, research variable mangling.
-* grunt-contrib-sass. Is Compass a better idea?
+* grunt-contrib-sass. Is Compass a better idea? Is it ever beneficial to use Compass with Grunt?
+* Possible issues with the above project organization implemented in a CMS system
+* Are there WordPress plugins for image minification?
 * It would be great to have a terminal emulator that supports multiple tabs
 
 ##To Use or Not to Use##
