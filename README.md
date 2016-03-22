@@ -30,3 +30,10 @@ On the branch named only-images, running the above command will trigger only gru
 ##An Issue with the Mac##
 
 After getting everything working on my Windows machine, I cloned the repo and attempted to run "grunt watch" on my Mac. An error occurred during the imagemin task: `"Warning: Error: spawn ... ENOENT in file ... Use --force to continue."` I tried a great number of potentially dangerous things to solve this issue. In the end, removing the node_modules directory and running "npm install" again ended up fixing everything.
+
+##Future Tools or Features to Include##
+
+* grunt-uncss: getting this to work with other plugins can be tricky...do more research on the WordPress workaround
+* add preserveComments key to specify desired action with respect to how the uglify task handles comments, research variable mangling.
+* grunt-contrib-sass. Is Compass a better idea?
+* It would be great to have a terminal emulator that supports multiple tabs
