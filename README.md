@@ -1,3 +1,9 @@
+##Requirements##
+
+* Node
+* npm
+* Grunt-cli
+
 ##Getting Started or Whatever##
 
 1. Clone the repo
@@ -7,6 +13,19 @@
 ##Notes##
 
 There are currently two main branches to this repo: Master and only-images. The former contains a few Grunt plugins, while the latter contains only grunt-contrib-imagemin.
+
+##What to Expect##
+
+Running "grunt watch" on the master branch will run the following Grunt plugins (where applicable):
+
+* grunt-contrib-watch
+* grunt-newer
+* grunt-contrib-imagemin
+* grunt-processhtml
+* grunt-contrib-uglify
+* grunt-contrib-cssmin
+
+On the branch named only-images, running the above command will trigger only grunt-contrib-watch, grunt-newer, and grunt-contrib-imagemin.
 
 ##An Issue with the Mac##
 
