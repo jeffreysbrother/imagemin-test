@@ -12,7 +12,7 @@
 
 ##Notes##
 
-There are currently two main branches to this repo: **Master** and **only-images**. The former contains a few Grunt plugins, while the latter contains only grunt-contrib-imagemin.
+There are two branches in this repo: **Master** and **only-images**. The former is meant to test multiple Grunt plugins, while the latter is meant to test (primarily) grunt-contrib-imagemin.
 
 ##Project Organization and What to Expect##
 
