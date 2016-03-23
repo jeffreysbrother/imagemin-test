@@ -6,7 +6,7 @@ var b = {
   },
   name: "variable b",
   advice: "you can access these properties and methods by using the dot syntax"
-}
+};
 
 var b2 = 129999;
 var b3 = 109;   
