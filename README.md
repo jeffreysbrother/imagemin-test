@@ -28,7 +28,7 @@ Running "grunt watch" on the **Master** branch will run the following Grunt plug
 * grunt-contrib-cssmin
 * grunt-uncss
 
-On the branch named **only-images**, running the above command will trigger only grunt-contrib-watch, grunt-newer, and grunt-contrib-imagemin.
+On the branch named **only-images**, simply running "grunt" (the default task) will trigger only grunt-newer and grunt-contrib-imagemin.
 
 This task will generate a "dist" directory containing a processed HTML file that reflects the new CSS and JS (now minified and concatenated), and images that have been minified. Thanks to grunt-newer, this image minification process will only be carried out when the src/ directory contains images not contained in dist/.
 
