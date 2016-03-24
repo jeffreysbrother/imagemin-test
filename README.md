@@ -8,11 +8,10 @@
 
 1. Clone the repo
 2. run "npm install" to install all dev dependencies as specified in the package.json file
-3. run "grunt watch"
 
 ##Notes##
 
-There are two branches in this repo: **Master** and **only-images**. The former is meant to test multiple Grunt plugins, while the latter is meant to test (primarily) grunt-contrib-imagemin.
+There are two branches in this repo: **Master** and **only-images**. The former is meant to test multiple Grunt plugins, while the latter is meant to test (primarily) ~~grunt-contrib-imagemin~~ grunt-responsive-images.
 
 ##Project Organization and What to Expect##
 
@@ -28,11 +27,11 @@ Running "grunt watch" on the **Master** branch will run the following Grunt plug
 * grunt-contrib-cssmin
 * grunt-uncss
 
-On the branch named **only-images**, simply running "grunt" (the default task) will trigger only grunt-newer and grunt-contrib-imagemin.
-
 This task will generate a "dist" directory containing a processed HTML file that reflects the new CSS and JS (now minified and concatenated), and images that have been minified. Thanks to grunt-newer, this image minification process will only be carried out when the src/ directory contains images not contained in dist/.
 
-##An Issue with the Mac##
+On the branch named **only-images**, simply running "grunt" (the default task) will trigger grunt-responsive-images.
+
+##An Issue with the Mac and imagemin##
 
 After getting everything working on my Windows machine, I cloned the repo and attempted to run "grunt watch" on my Mac. An error occurred during the imagemin task: `"Warning: Error: spawn ... ENOENT in file ... Use --force to continue."` I tried a great number of potentially dangerous things to solve this issue. In the end, removing the node_modules directory and running "npm install" again ended up fixing everything. This, by the way, does not appear to break the Grunt tasks if the changes are committed and pushed after switching to operating system b, and then pulling the code updates back to operating system a; the round-trip from Windows-Mac-Windows is working just fine for me.
 
