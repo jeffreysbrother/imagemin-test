@@ -4,33 +4,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // this task handles image compression and resizing
-    // required: imageMagick installed
-    responsive_images: {
-        myTask: {
-          options: {
-            sizes: [{
-              width: 150,
-              quality: 40
-            },{
-              width: 300,
-              quality: 40
-            },{
-              width: 700,
-              quality: 40
-            }]
-          },
-          files: [{
-            expand: true,
-            src: ['src/img/**.{jpg,gif,png}'],
-            custom_dest: 'dist/img{%= width %}/'
-          }]
-        }
-      }
+    // add stuff here
 
   });
 
-  grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-x');
 
-  grunt.registerTask('default', ['responsive_images']);
+  grunt.registerTask('default', ['x']);
 };

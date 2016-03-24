@@ -1,21 +1,18 @@
 {
-  "name": "imagemin-test",
+  "name": "generic",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "james cool",
+  "author": "ninthlink",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-newer": "^1.1.2",
-    "grunt-responsive-images": "^0.1.7",
-    "imagemin-mozjpeg": "^5.1.0"
+
   },
   "dependencies": {
-    "imagemin-mozjpeg": "^5.1.0"
+    
   }
 }
