@@ -5,19 +5,19 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     // this task handles image compression and resizing
-    // required: imageMagick installed
+    // required: GraphicsMagick installed
     responsive_images: {
         myTask: {
           options: {
             sizes: [{
-              width: 150,
-              quality: 40
-            },{
-              width: 300,
-              quality: 40
-            },{
-              width: 700,
-              quality: 40
+              width: 2100,
+              quality: 61
+            // },{
+            //   width: 300,
+            //   quality: 40
+            // },{
+            //   width: 700,
+            //   quality: 40
             }]
           },
           files: [{
